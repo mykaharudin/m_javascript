@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objek nih</title>
+</head>
+<body>
+    <script>
+        var orang = {
+            nama1 : "Maulana",
+            nama2 : "Yusuf",
+            lihatnama : function(){
+                alert(`Nama : ${this.nama1} ${this.nama2}`);
+            }
+        };
+        orang.lihatnama();
+    </script>
+
+    <script>
+        function Orang1(awalan, akhiran){
+            this.awalan = awalan;
+            this.akhiran = akhiran;
+
+            this.lengkap = function(){
+                return `${this.awalan} ${this.akhiran}`
+            }
+            this.lihatlengkap = function(){
+                document.write(this.lengkap());
+            }
+        }
+
+        var person1 = new Orang1("Maulana", "Yusuf");
+        var person2 = new Orang1("Yusuf", "Kaharudin");
+
+        person1.lihatlengkap();
+        document.writeln("<br>");
+        person2.lihatlengkap();
+        
+    </script>
+</body>
+</html>
