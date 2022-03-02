@@ -11,6 +11,8 @@
     <button id="btn-clear" onclick="clearResult()">Clear</button>
     <div id="hasil"></div>
     <button onclick="loadContent()">Load nih</button>
+
+    <p id="location"> mau lokasi</p>
     <script>
       function loadContent(){
             var xhr = new XMLHttpRequest();
@@ -54,5 +56,6 @@
             document.getElementById("hasil").innerHTML = "";
         }
     </script>
+    
 </body>
 </html>
